@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Memoria Activa — 50 años de Memoria, Verdad y Justicia</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- HEADER / NAVBAR -->
+<header>
+  <nav class="navbar navbar-expand-md fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#inicio">🕊 Memoria Activa</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#linea">Línea de tiempo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tarjeta-sec">Tarjeta</a></li>
+          <li class="nav-item"><a class="nav-link" href="#adhesion">Adhesión</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h1 class="display-3 fw-bold">50 años.<br>Memoria, Verdad y Justicia.</h1>
+      <p class="lead mt-3">Sitio de <strong>Programando con Memoria</strong>, iniciativa de UNAHUR a 50 años del golpe cívico-militar.</p>
+      <p class="contador-texto">Van <span id="contador" class="contador">50</span> años de Memoria, Verdad y Justicia.</p>
+      <a href="#adhesion" class="btn btn-warning btn-lg">Sumá tu adhesión</a>
+    </div>
+  </section>
+
+  <!-- LÍNEA DE TIEMPO -->
+  <section id="linea">
+    <div class="container">
+      <h2 class="mb-4">Línea de tiempo</h2>
+      <ol class="linea">
+        <li><span class="anio">24 de marzo de 1976</span><p>Un golpe cívico-militar derroca al gobierno constitucional e instala la dictadura.</p></li>
+        <li><span class="anio">30 de abril de 1977</span><p>Las Madres de Plaza de Mayo hacen su primera ronda reclamando por sus hijos e hijas.</p></li>
+        <li><span class="anio">10 de diciembre de 1983</span><p>Vuelve la democracia con la asunción de Raúl Alfonsín.</p></li>
+        <li><span class="anio">1984</span><p>La CONADEP entrega el informe <em>Nunca Más</em> con la documentación de las desapariciones.</p></li>
+        <li><span class="anio">1985</span><p>Juicio a las Juntas: un tribunal civil juzga y condena a comandantes de la dictadura.</p></li>
+        <li><span class="anio">2005</span><p>La Corte Suprema declara inconstitucionales las leyes de Punto Final y Obediencia Debida y se reabren los juicios.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section id="testimonios" class="seccion-alt">
+    <div class="container">
+      <h2 class="mb-3">Archivo de testimonios</h2>
+      <label for="buscador" class="form-label">Buscá por nombre, palabra o año</label>
+      <input type="search" id="buscador" class="form-control mb-4" placeholder="Ej: madres, 1985, juicio...">
+      <div class="row g-3" id="listaTestimonios">
+        <div class="col-md-6 col-lg-4 testimonio">
+          <article class="card card-m"><div class="card-body">
+            <h3 class="h5">Madres de Plaza de Mayo</h3>
+            <p>Desde 1977 se reúnen en la Plaza de Mayo para reclamar por la aparición con vida de sus hijos e hijas.</p>
+          </div></article>
+        </div>
+        <div class="col-md-6 col-lg-4 testimonio">
+          <article class="card card-m"><div class="card-body">
+            <h3 class="h5">Abuelas de Plaza de Mayo</h3>
+            <p>Buscan a los nietos y nietas apropiados durante la dictadura y trabajan para restituir su identidad.</p>
+          </div></article>
+        </div>
+        <div class="col-md-6 col-lg-4 testimonio">
+          <article class="card card-m"><div class="card-body">
+            <h3 class="h5">CONADEP — Nunca Más (1984)</h3>
+            <p>Recogió denuncias y testimonios que probaron el plan sistemático de desaparición de personas.</p>
+          </div></article>
+        </div>
+        <div class="col-md-6 col-lg-4 testimonio">
+          <article class="card card-m"><div class="card-body">
+            <h3 class="h5">Juicio a las Juntas (1985)</h3>
+            <p>Sobrevivientes y familiares declararon ante la Justicia civil. Sus relatos fueron clave para las condenas.</p>
+          </div></article>
+        </div>
+        <div class="col-md-6 col-lg-4 testimonio">
+          <article class="card card-m"><div class="card-body">
+            <h3 class="h5">H.I.J.O.S. (1995)</h3>
+            <p>Hijos e hijas de desaparecidos se organizaron para exigir justicia y sostener la memoria de sus familias.</p>
+          </div></article>
+        </div>
+      </div>
+      <p id="sinResultados" class="alert alert-secondary mt-3 d-none">No hay testimonios que coincidan. Probá con otra palabra.</p>
+    </div>
+  </section>
+
+  <!-- TARJETA CONMEMORATIVA -->
+  <section id="tarjeta-sec">
+    <div class="container">
+      <h2 class="mb-4">Tarjeta conmemorativa</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-5">
+          <form id="formTarjeta" novalidate>
+            <label for="tNombre" class="form-label">Tu nombre</label>
+            <input type="text" id="tNombre" class="form-control mb-3" maxlength="40" placeholder="Ej: Lucía">
+            <label for="tFrase" class="form-label">Elegí una frase</label>
+            <select id="tFrase" class="form-select mb-3">
+              <option>Memoria, Verdad y Justicia</option>
+              <option>Nunca Más</option>
+              <option>30.000 detenidos-desaparecidos: presentes</option>
+              <option>Sin memoria no hay futuro</option>
+            </select>
+            <button type="submit" class="btn btn-warning">Generar tarjeta</button>
+          </form>
+        </div>
+        <div class="col-md-7">
+          <div id="tarjeta" class="tarjeta"><p class="m-0">Completá el formulario y generá tu tarjeta.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE ADHESIÓN -->
+  <section id="adhesion" class="seccion-alt">
+    <div class="container">
+      <h2 class="mb-4">Formulario de adhesión</h2>
+      <form id="formAdhesion" class="col-lg-7 p-0" novalidate>
+        <div class="mb-3">
+          <label for="adNombre" class="form-label">Nombre y apellido</label>
+          <input type="text" id="adNombre" class="form-control">
+          <div class="invalid-feedback">Ingresá tu nombre (mínimo 3 caracteres).</div>
+        </div>
+        <div class="mb-3">
+          <label for="adEmail" class="form-label">Correo electrónico</label>
+          <input type="email" id="adEmail" class="form-control">
+          <div class="invalid-feedback">Ingresá un correo válido, por ejemplo nombre@dominio.com.</div>
+        </div>
+        <div class="mb-3">
+          <label for="adMensaje" class="form-label">¿Por qué adherís?</label>
+          <textarea id="adMensaje" class="form-control" rows="3"></textarea>
+          <div class="invalid-feedback">Escribí un mensaje de al menos 10 caracteres.</div>
+        </div>
+        <div class="form-check mb-3">
+          <input type="checkbox" id="adAcepto" class="form-check-input">
+          <label for="adAcepto" class="form-check-label">Acepto que mi adhesión se difunda en este sitio.</label>
+          <div class="invalid-feedback">Tenés que aceptar para continuar.</div>
+        </div>
+        <button type="submit" class="btn btn-warning">Enviar adhesión</button>
+        <div id="exito" class="alert alert-success mt-3 d-none" role="status"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="text-center py-4">
+  <p class="fs-4 fw-bold mb-1">Nunca Más</p>
+  <p class="small mb-0">Lenguajes Informáticos 1 | UNAHUR 2026 | Programando con Memoria</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
